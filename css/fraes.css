@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html, body {
+  background: #002B45;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.fraes-wrapper {
+  position: relative;
+  top: 50%;
+  height: 60px;
+  width: 320px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+.fraes-shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #68B2E3;
+}
+.fraes-text {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 9px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 3px;
+  }
+}
+.fraes-wrapper:hover .fraes-shape {
+  -webkit-animation: 0.6s draw linear forwards;
+  animation: 0.6s draw linear forwards;
+}
+.info-wrapper {
+  position: relative;
+  top: 70%;
+  height: 60px;
+  width: 320px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+.info-text {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+a {
+  color: #68B2E3;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
